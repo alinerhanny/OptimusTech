@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a, ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.625rem 1.125rem;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* ====== HEADER ====== */
+
+.navBar {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ====== NAVEGACÃO ====== */
+
+.navegacao ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navegacao a {
+  position: relative;
+  color: #667085;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.navegacao a:after {
+  content: "";
+  position: absolute;
+  background-color: #8e2424;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.navegacao a:hover:after {
+  width: 100%;
+}
+
+/* ======= BOTÕES ====== */
+
+.navigation-action {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.entrar {
+  background-color: white;
+  color: #667085;
+}
+
+.cadastrar {
+  background-color: #8e2424;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.entrar:hover {
+  border: 2px solid #8e2424;
+  color: #8e2424;
+}
+
+.cadastrar:hover {
+  background: #b12c2c;
+}
+
+/* ====== CABEÇALHO ====== */
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0rem;
+  gap: 1.5rem;
+}
+
+.cabecalho .subheading {
+  color: #8e2424;
+  font-weight: 600;
+}
+
+.cabecalho h1 {
+  color: #101828;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.cabecalho p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #667085;
+}
+
+/* ====== METRICAS ====== */
+
+.metricas {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  padding-bottom: 6rem;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.dados {
+  color: #8e2424;
+  font-size: 3.75rem;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 0.75rem;
+}
+
+.titulo {
+  color: #101828;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.descricao {
+  color: #667085;
+  line-height: 150%;
+}
+
+/* ====== VAGAS ====== */
+.vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+  gap: 4rem;
+}
+
+
+.intro-vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 2rem;
+  gap: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(142, 36, 36, 0.05); 
+  color: #8e2424; 
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #101828;
+}
+
+.intro-vagas p {
+  font-size: 1.25rem;
+  color: #667085;
+}
+
+/* ====== VAGAS ABERTAS ====== */
+
+.vagas-abertas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+
+.vagas-design, .vagas-web{
+  display: flex;
+  flex-direction: column;
+  width: 768px;
+  gap: 2rem;
+}
+
+.jobPost {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid #eaecf0;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+}
+
+h3, h4 {
+  color: #101828;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.detalhes-vaga {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detalhes-vaga p {
+  color: #667085;
+  font-weight: 500;
+}
+
+/* ====== DEPOIMENTOS ====== */
+
+.depoimentos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+
+.container-dep {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+  background-color: rgba(195, 25, 25, 0.03);
+  border-radius: 1rem;
+}
+
+.container-dep .subheading {
+  color: #8e2424;
+  font-weight: 600;
+}
+
+blockquote {
+  color: #101828;
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.autor-container {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.autor {
+  color: #101828;
+  font-weight: 500;
+  margin: 1rem 0 0.25rem 0;
+}
+
+.profissao {
+  color: #667085;
+}
+
+/* ====== FORMULARIO ====== */
+
+.formulario {
+  background-color: #f9fafb;
+  padding: 6rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cabecalho-form p {
+  color: #667085;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+input {
+  width: 300px;
+  padding: 0.75rem 0.875rem 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #D0D5DD;
+  outline: none;
+}
+
+form > button {
+  background-color: #8e2424;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.footer {
+  color: #667085;
+  font-size: 1rem;
+}
